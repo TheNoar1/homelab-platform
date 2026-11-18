@@ -1,0 +1,45 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+crash.log
+override.tf
+override.tf.json
+# plan files can contain secrets in plaintext
+*.tfplan
+tfplan
+# keep .terraform.lock.hcl committed
+
+# Kubernetes and cluster access
+kubeconfig
+*.kubeconfig
+.kube/
+k3s.yaml
+
+# Secrets and keys
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.key
+age.key
+keys.txt
+secrets.yaml
+# encrypted SOPS files are fine to commit
+!*.sops.yaml
+.cloudflared/
+cloudflared-credentials.json
+*.token
+
+# Ansible
+*.retry
+.vault_pass
+
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
